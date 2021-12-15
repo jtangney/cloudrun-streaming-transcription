@@ -1,0 +1,7 @@
+# ignore the browserify'd source
+bundle.js
+
+node_modules
+.idea
+.DS_Store
+tmp/

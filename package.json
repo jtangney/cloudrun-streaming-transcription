@@ -1,0 +1,31 @@
+{
+  "name": "cloudrun-speech-streaming",
+  "version": "1.0.0",
+  "description": "Streaming speech-to-text transcription using Cloud Run",
+  "main": "server.js",
+  "dependencies": {
+    "@google-cloud/speech": "^4.9.0",
+    "express": "^4.17.1",
+    "get-user-media-promise": "^1.1.4",
+    "microphone-stream": "^6.0.1",
+    "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0"
+  },
+  "devDependencies": {
+    "tinyify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "browserify public/client.js -o public/bundle.js",
+    "dev": "npm run build; npm start"
+  },
+  "keywords": [
+    "google cloud",
+    "cloud run",
+    "speech-to-text",
+    "socket.io"
+  ],
+  "author": "",
+  "license": "ISC"
+}
